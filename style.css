@@ -1,0 +1,72 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+:root {
+    --black: #0a0a14;
+    --dark-blue: #0f1a3c;
+    --purple: #6a3fb5;
+    --white: #ffffff;
+}
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+.hero {
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.hero h1 {
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 16rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+}
+.hero a {
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: none;
+}
+#learn {
+    min-height: 100vh;
+    text-align: center;
+}
+#learn h2 {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+.nuclear { --accent: #39ff14; }
+.space   { --accent: #6a3fb5; }
+.ai      { --accent: #4fa8ff; }
+.bot     { --accent: #b56aff; } 
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 1rem;
+}
+.cards article {
+    background: var(--dark-blue);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 0 20px rgba(106, 63, 181, 0.2);
+}
