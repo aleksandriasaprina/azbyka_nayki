@@ -1,11 +1,46 @@
 <body class="theme-bot">
 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600;900&display=swap" rel="stylesheet">
+    <title>Чат-бот — Азбука науки</title>
+</head>
+<body class="theme-bot">
+<header class="site-header">
+    <a href="../index.html" class="logo">Азбука науки</a>
+    <nav class="site-nav">
+        <a href="../index.html" class="theme-main">Главная</a>
+        <a href="space.html" class="theme-space">Космос</a>
+        <a href="nuclear.html" class="theme-nuclear">Ядро</a>
+        <a href="ai.html" class="theme-ai">ИИ</a>
+        <a href="bot.html" class="active">Чат-бот</a>
+    </nav>
+</header>
+<main class="chat-layout">
+    <aside class="chat-sidebar">
+        <button class="new-chat-btn" id="new-chat">+ Новый чат</button>
+        <p class="sidebar-hint">История чатов появится позже</p>
+    </aside>
+
+    <section class="chat-main">
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                Привет! Я помогу разобраться с космосом, ядром и ИИ. С чего начнём?
+            </div>
+        </div>
+
+        <form class="chat-form" id="chat-form">
+            <input type="text" id="chat-input" placeholder="Напиши вопрос..." autocomplete="off">
+            <button type="submit" aria-label="Отправить">→</button>
+        </form>
+    </section>
+</main>
+<script src="../script.js"></script>
 </body>
-<footer class="footer">
-    <h2>Контакты</h2>
-    <ul>
-        <li>Имя: Александрия</li>
-        <li><a href="mailto:aleksandriasaprina@gmail.com">aleksandriasaprina@gmail.com</a></li>
-        <li><a href="https://github.com/aleksandriasaprina">GitHub</a></li>
-    </ul>
-</footer>
+</html>
